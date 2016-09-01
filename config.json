@@ -1,0 +1,36 @@
+{
+  "config":{
+    "services": {
+      "db": {
+        "active"           : false,
+        "connectionstring" : ""
+      },
+      "twitter": {
+        "consumerKey"    : "",
+        "consumerSecret" : "",
+        "accessToken"    : "",
+        "accessSecret"   : ""
+      }
+    },
+    "accept": {
+      "languages": [
+        "en",
+        "de"
+      ]
+    },
+    "ignore": {
+      "users": [
+      ],
+    "terms": [
+      ]
+    },
+    "filter": [
+      "tweetfleet",
+      "evede",
+      "eveonline",
+      "EVEValkyrie",
+      "ccplife"
+      
+    ]
+  }
+}
