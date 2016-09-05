@@ -26,3 +26,7 @@ ON twitter.tweets ((tweets.tweetcontent->'place'->>'place_type'));
 DROP INDEX idx_tweets_placecountry;
 CREATE INDEX idx_tweets_placecountry 
 ON twitter.tweets ((tweets.tweetcontent->'place'->>'country'));
+
+DROP INDEX idx_tweets_in_reply_to_status_id;
+CREATE INDEX idx_tweets_in_reply_to_status_id 
+ON twitter.tweets ((tweets.tweetcontent->'in_reply_to_status_id'));
