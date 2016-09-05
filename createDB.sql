@@ -18,3 +18,11 @@ ON twitter.tweets ((tweetcontent->>'screen_name'));
 DROP INDEX idx_tweets_timestamp;
 CREATE INDEX idx_tweets_timestamp 
 ON twitter.tweets ((tweetcontent->>'timestamp_ms'));
+
+DROP INDEX idx_tweets_placetype;
+CREATE INDEX idx_tweets_placetype 
+ON twitter.tweets ((tweets.tweetcontent->'place'->>'place_type'));
+
+DROP INDEX idx_tweets_placecountry;
+CREATE INDEX idx_tweets_placecountry 
+ON twitter.tweets ((tweets.tweetcontent->'place'->>'country'));
