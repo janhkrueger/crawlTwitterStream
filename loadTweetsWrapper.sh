@@ -2,7 +2,7 @@
 #
 # check, if script is already running
 
-# Usage: change the patch for the lockfile
+# Usage: change the path for the lockfile
 
 SCRIPTNAME='basename $0'
 LOCKFILENAME="/var/lock/KillReporter/`basename $0`"
