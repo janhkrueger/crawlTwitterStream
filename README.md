@@ -45,5 +45,18 @@ Just run:
 python exportTweets.py
 ```
 
+=============
+### Fetch entire timeline of a user
+For special purposes, or to create a dataset to start, there is a way to export the entire timeline of a user with the script __getEntireTimeline.py__
+This script exports the tweets, a single tweet per file, named _[tweetID]_.txt
+Currently the screenname to crawl has to be put hard into the script.
+
+Usage:
+```
+python getEntireTimeline.py
+```
+
+The resulting files can stored into the database with the script __saveTweets.py__
+
 
 [1]: https://github.com/tweepy/tweepy
